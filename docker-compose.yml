@@ -54,3 +54,11 @@ services:
       SPRING_PROFILES_ACTIVE: docker
     volumes:
       - ./calculator-app-logs:/app/logs
+
+  rest-test:
+    image: maven:3.9.3-eclipse-temurin-17
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: mvn clean test
+    profiles: ["test"]
