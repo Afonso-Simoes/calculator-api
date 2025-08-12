@@ -116,5 +116,5 @@ Response:
 To run tests inside Docker, use:
 
 ```bash
-docker-compose run --rm rest-module mvn clean test
+docker-compose --profile test run --rm rest-test
 ```
