@@ -11,8 +11,7 @@ COPY calculator/pom.xml calculator/pom.xml
 COPY rest/src rest/src
 COPY calculator/src calculator/src
 
-RUN --mount=type=cache,target=/root/.m2 ./mvnw clean install -f calculator/pom.xml
-# RUN --mount=type=cache,target=/root/.m2 ./mvnw clean install -DskipTests -f calculator/pom.xml
+RUN --mount=type=cache,target=/root/.m2 ./mvnw clean install -q -f calculator/pom.xml
 
 # Stage 2: Create the final image
 FROM eclipse-temurin:17-jre-jammy
