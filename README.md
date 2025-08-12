@@ -60,7 +60,6 @@ This project implements a RESTful Calculator API that supports basic arithmetic 
 
 ```http
 GET http://localhost:8080/sum?a=1.5&b=2.5
-Accept: application/json
 ```
 Response: 
 {
@@ -72,7 +71,6 @@ Response:
 
 ```http
 GET http://localhost:8080/subtract?a=1&b=3
-Accept: application/json
 ```
 Response: 
 {
@@ -84,7 +82,6 @@ Response:
 
 ```http
 GET http://localhost:8080/multiply?a=2&b=3
-Accept: application/json
 ```
 Response: 
 {
@@ -96,7 +93,6 @@ Response:
 
 ```http
 GET http://localhost:8080/divide?a=1&b=5
-Accept: application/json
 ```
 Response: 
 {
@@ -108,7 +104,6 @@ Response:
 
 ```http
 GET http://localhost:8080/divide?a=1&b=0
-Accept: application/json
 ```
 Response: 
 {
