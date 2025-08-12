@@ -20,7 +20,7 @@ This project implements a RESTful Calculator API that supports basic arithmetic 
 ### Prerequisites
 
 - Git  
-- Docker
+- Docker & Docker Compose
 
 ### Steps
 
